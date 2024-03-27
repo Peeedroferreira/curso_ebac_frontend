@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulários</h1>
+
+    <form>
+        <input type="text" placeholder="Seu Nome">
+        <br />
+        <label for="email">Seu Email</label>
+        <br />
+        <input type="tel" placeholder="Seu Telefone" /> <br />
+
+        <input type="number" max="10" min="2" step="2" /> <br />
+
+        <input type="file" /> <br />
+
+        <input type="color" /> <br />
+
+        <input type="checkbox" id="check-termos" /> <label for="check-termos">Aceito os termos</label> <br />
+
+        <p>
+            Qual sua cor favorita?
+        </p>
+
+        <input type="radio" name="cor" value="Azul" /> Azul <br />
+        <input type="radio" name="cor" value="Vermelho" /> Vermelho <br />
+        <input type="radio" name="cor" value="Amarelo" /> Amarelo <br />
+        
+        <br />
+
+        <label> Qual seu filme favorito?</label>
+        <select>
+            <option value="filme1">Filme 1</option>
+            <option value="filme2">Filme 2</option>
+            <option value="filme3">Filme 3</option>
+        </select>
+        <br />
+
+        <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+        <button type="submit">
+            Enviar
+        </button>
+        <button type="reset">
+            Limpar Campos
+        </button>
+    </form>
+</body>
+</html>
