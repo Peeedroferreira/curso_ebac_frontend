@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body > header {
+    background-color: #333;
+    color: white;
+    padding: 16px 0;
+}   
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header li {
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 16px;
+}
+
+header li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+}
+
+header nav {
+    text-align: right;
+}
+
+header li a:hover {
+    background-color: #555;
+    text-decoration: underline;
+}
+
+header h1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.container {
+    width: 1366px;
+    margin: 0 auto;
+}
+
+header h1{
+    text-align: center;
+}
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.articles article img {
+    /*width: 100%;*/
+    width: 100%;
+    
+}
+
+.articles article {
+    width: 30%;
+
+}
+
+section {
+    padding: 16px 0;
+} 
+
+section h2,
+.articles article {
+    text-align: center;
+    margin-bottom: 16px;
+    }
+
+.articles article h3 {
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+
+.articles article a {
+    background-color:   blue;
+    color: #ffffff;
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 8px;
+
+}
+
+.articles article a:hover {
+    background-color: #333;
+}
+.articles article p,
+.articles article a {
+    margin-bottom: 16px;
+    font-family: Arial, sans-serif;
+}
+
+.articles article h3 {
+    font-size: 24px;
+}
+
+section h2 {
+    font-size: 32px;
+}
+
+
+#sports {
+    background-color: rgb(0, 255, 0, 0.1);
+}
+
+
+#sports .articles article a {
+    background-color: #009432
+}
+
+
+#economy {
+    background-color: rgba(255, 238, 0, 0.897);
+}
+
+#economy .articles article a {
+    background-color: #FFC312;
+}
+
+#technology {
+    background-color: rgba(10, 10, 44, 0.1);
+}
+
+#technology .articles article a {
+    background-color: #4a69bd;
+}
+
+#policial {
+    background-color: rgb(255, 0, 0);
+}
+
+#policial .articles article a {
+    background-color: #e74c3c;
+}

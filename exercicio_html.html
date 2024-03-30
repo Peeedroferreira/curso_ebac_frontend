@@ -4,69 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Formulário de Cadastro</title>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  .centered {
-  text-align: center;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  }
-
-
-
-form {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 80%; 
-  max-width: 500px; 
-  margin: auto;
-}
-  h2 {
-    color: #333;
-  }
-  label {
-    display: block;
-    margin-top: 10px;
-    color: #666;
-    text-align: left;
-  }
-  input[type=text],
-  input[type=email],
-  input[type=password] {
-    width: calc(100% - 22px);
-    padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-  }
-  input[type=submit] {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    background-color: #5cb85c;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  input[type=submit]:hover {
-    background-color: #4cae4c;
-  }
-</style>
+<link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 <body>
 <div class="centered">
@@ -83,6 +21,8 @@ form {
     <input type="password" id="password" name="password" required aria-required="true" placeholder="Crie uma senha">
 
     <input type="submit" value="Cadastrar">
+    
+    <input type="reset" value="Limpar">
   </form> 
 </div>
 </body>
