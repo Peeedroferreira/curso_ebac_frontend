@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: auto;
+    max-width: 400px; /* Ajuste conforme necessário */
+}
+
+form {
+    margin-top: 20px;
+}
+
+input[type="number"], button {
+    width: 90%; /* Ajuste a largura dos campos de input e botão */
+    max-width: 300px; /* Limita a largura máxima */
+    margin: 10px auto; /* Centraliza e adiciona espaço */
+    height: 40px;
+    padding: 0 10px; /* Adiciona um pequeno padding interno */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#mensagem {
+    margin-top: 20px; /* Adiciona espaço acima da mensagem */
+    color: #d8000c; /* Cor do texto para a mensagem */
+    background-color: #ffbaba; /* Cor de fundo para a mensagem */
+    border: 1px solid #d8000c;
+    border-radius: 4px;
+    padding: 10px;
+    display: none; /* Esconde a div até que uma mensagem seja adicionada */
+    width: 90%; /* Ajuste a largura da mensagem */
+    max-width: 300px; /* Limita a largura máxima */
+    margin: 20px auto; /* Espaçamento e centralização */
+}
+
+h1 {
+    margin-bottom: 20px; /* Adiciona espaço abaixo do título */
+    color: #333;
+}
