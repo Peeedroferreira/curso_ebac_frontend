@@ -1,0 +1,176 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alinha os itens ao centro */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+input, button {
+    width: 90%; 
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+input:hover {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Adiciona uma sombra quando o mouse passa sobre o campo de entrada */
+    transition: box-shadow 0.3s ease; /* Adiciona uma transição suave para a sombra */
+}
+
+input:focus {
+    outline: none; /* Remove o contorno padrão do navegador */
+    box-shadow: 0 0 10px #719ECE; /* Adiciona uma sombra azul ao redor do campo de entrada */
+}
+button {
+    background-color: #6A7FDB;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background: white;
+    border-radius: 8px;
+    margin: auto;
+}
+
+ww
+
+th, td {
+    padding: 15px; 
+    text-align: left;
+    border-bottom: 1px solid #BDD6EE; 
+}
+
+th {
+    background-color: #8AAAD2; 
+    color: white;
+    text-align: left;
+}
+
+tr:nth-child(odd) {
+    background-color: #E7EFFF; 
+}
+
+tr:nth-child(even) {
+    background-color: #FFFFFF; 
+}
+
+tr {
+    display: table-row;
+}
+
+.telephone {
+    text-align: right;
+}
+
+.select-wrapper {
+    position: relative;
+    width: 90%; /* ou a largura que você preferir */
+    margin-top: 10px;
+}
+
+.select-wrapper select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-appearance: none; /* Remove a aparência nativa do elemento select no Chrome */
+    -moz-appearance: none; /* Remove a aparência nativa no Firefox */
+    appearance: none; /* Remove a aparência nativa em navegadores modernos */
+    background-color: white;
+    color: black; /* Cor do texto */
+    background-image: url('data:image/png;base64,...'); /* ícone de seta para baixo codificado em base64 */
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+}
+
+/* Modo Noturno */
+body.dark-mode {
+    background-color: #2b2f77; /* Cor de fundo mais escura para o modo noturno */
+    color: #ffffff;
+}
+
+/* Estilos do formulário no Modo Noturno */
+form.dark-mode {
+    background: #3c408b; /* Cor de fundo do formulário mais suave */
+}
+
+/* Estilos da tabela no Modo Noturno */
+table.dark-mode {
+    background: #3c408b; /* Cor de fundo da tabela */
+    color: #ffffff;
+}
+
+body.dark-mode #search-form {
+    background-color: #3c408b;
+}
+
+table.dark-mode th {
+    background-color: #323768; /* Um azul mais suave para a primeira linha da tabela */
+    color: #ffffff;
+}
+
+table.dark-mode td {
+    border-bottom: 1px solid #4f528c; /* Linhas divisórias em um tom de azul que combine */
+}
+
+/* Cores alternadas para as linhas da tabela no modo noturno */
+table.dark-mode tr:nth-child(odd) {
+    background-color: #363a7c;
+}
+
+table.dark-mode tr:nth-child(even) {
+    background-color: #3c408b;
+}
+
+/* Estilos dos botões no Modo Noturno */
+button.dark-mode {
+    background-color: #484b9e; /* Um tom de azul mais vívido para os botões */
+    color: #dde1f8; /* Cor do texto do botão mais claro para melhor legibilidade */
+}
+
+button.dark-mode:hover {
+    background-color: #535a9d; /* Um azul claro para o estado de hover do botão */
+}
+
+/* Modifica a cor do título no modo noturno */
+body.dark-mode h1 {
+    color: #c2c5d6; /* Um tom claro de azul para o título que será visível no fundo escuro */
+}
+
+body.dark-mode .select-wrapper select {
+    background-color: #3c408b;
+    color: white;
+    border: 1px solid #555;
+}
+
+body.dark-mode input, body.dark-mode select {
+    background-color: #333333; /* Cor de fundo mais escura para o modo noturno */
+    color: #ffffff; /* Texto branco para o modo noturno */
+}

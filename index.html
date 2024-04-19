@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Contatos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Agenda de Contatos</h1>
+        <form id="contact-form">
+        <input type="text" id="name" placeholder="Nome" aria-label="Nome" required>
+        <input type="text" id="phone" placeholder="Telefone" aria-label="Telefone" required>
+        <div class="select-wrapper">
+            <select id="phone-type">
+                <option value="fixo">Telefone Fixo</option>
+                <option value="celular">Celular</option>
+            </select>
+        </div>
+        <button id="toggle-dark-mode">Modo Noturno</button>
+        <button type="submit" aria-label="Cadastrar novo contato">Cadastrar</button>
+        
+    </form>
+    <form id="search-form">
+        <input type="text" id="search" placeholder="Buscar contato pelo nome" aria-label="Buscar contato">
+        <button type="submit" aria-label="Buscar">Buscar</button>
+    </form>
+    <table id="contact-table">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th class="telephone">Telefone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Os contatos serão inseridos aqui -->
+        </tbody>
+    </table>
+    <script src="animations.js"></script>
+    <script src="dark-mode.js"></script>
+    <script src="search.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
