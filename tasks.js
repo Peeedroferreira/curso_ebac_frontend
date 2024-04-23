@@ -10,3 +10,10 @@ $(document).ready(function() {
         $(this).toggleClass('completed');
     });
 });
+
+
+$(document).ready(function() {
+    $('#clear-tasks').click(function() {
+        $('#task-list').empty(); 
+    });
+});

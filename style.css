@@ -55,6 +55,20 @@ button#toggle-dark-mode {
     width: 90%;  
     margin-top: 10px; 
 }
+button#clear-tasks {
+    padding: 10px 20px;
+    background-color: #757575; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 90%; 
+}
+
+button#clear-tasks:hover {
+    background-color: #5e5e5e; 
+}
 
 
 table {
@@ -193,6 +207,15 @@ button.dark-mode {
 
 button.dark-mode:hover {
     background-color: #535a9d; 
+}
+
+.dark-mode button#clear-tasks {
+    background-color: #626262; 
+    color: #ddd; 
+}
+
+.dark-mode button#clear-tasks:hover {
+    background-color: #707070; 
 }
 
 
