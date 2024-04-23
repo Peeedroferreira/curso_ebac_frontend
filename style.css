@@ -14,7 +14,7 @@ form {
     background: white;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Alinha os itens ao centro */
+    align-items: center; 
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     border-radius: 8px;
@@ -30,13 +30,13 @@ input, button {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 input:hover {
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Adiciona uma sombra quando o mouse passa sobre o campo de entrada */
-    transition: box-shadow 0.3s ease; /* Adiciona uma transição suave para a sombra */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    transition: box-shadow 0.3s ease; 
 }
 
 input:focus {
-    outline: none; /* Remove o contorno padrão do navegador */
-    box-shadow: 0 0 10px #719ECE; /* Adiciona uma sombra azul ao redor do campo de entrada */
+    outline: none; /
+    box-shadow: 0 0 10px #719ECE; 
 }
 button {
     background-color: #6A7FDB;
@@ -50,6 +50,13 @@ button:hover {
     box-shadow: 0 6px 12px rgba(0,0,0,0.2);
 }
 
+button#toggle-dark-mode {
+    padding: 10px 20px;
+    width: 90%;  
+    margin-top: 10px; 
+}
+
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -59,7 +66,6 @@ table {
     margin: auto;
 }
 
-ww
 
 th, td {
     padding: 15px; 
@@ -91,7 +97,7 @@ tr {
 
 .select-wrapper {
     position: relative;
-    width: 90%; /* ou a largura que você preferir */
+    width: 90%; 
     margin-top: 10px;
 }
 
@@ -100,30 +106,60 @@ tr {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    -webkit-appearance: none; /* Remove a aparência nativa do elemento select no Chrome */
-    -moz-appearance: none; /* Remove a aparência nativa no Firefox */
-    appearance: none; /* Remove a aparência nativa em navegadores modernos */
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+    appearance: none; 
     background-color: white;
-    color: black; /* Cor do texto */
-    background-image: url('data:image/png;base64,...'); /* ícone de seta para baixo codificado em base64 */
+    color: black; 
+    background-image: url('data:image/png;base64,...'); 
     background-position: right 10px center;
     background-repeat: no-repeat;
 }
 
+
+
+#task-list {
+    list-style-type: none; 
+    padding: 0;
+    max-width: 600px; 
+    margin: 20px auto; 
+    background: #fff; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden; 
+}
+
+
+#task-list li {
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee; 
+    cursor: pointer;
+    background-color: #f9f9f9; 
+    transition: background-color 0.3s ease; 
+}
+
+#task-list li:last-child {
+    border-bottom: none; 
+}
+
+#task-list li:hover {
+    background-color: #e9e9e9;
+}
+
 /* Modo Noturno */
 body.dark-mode {
-    background-color: #2b2f77; /* Cor de fundo mais escura para o modo noturno */
+    background-color: #2b2f77; 
     color: #ffffff;
 }
 
-/* Estilos do formulário no Modo Noturno */
+
 form.dark-mode {
-    background: #3c408b; /* Cor de fundo do formulário mais suave */
+    background: #3c408b; 
 }
 
-/* Estilos da tabela no Modo Noturno */
+
 table.dark-mode {
-    background: #3c408b; /* Cor de fundo da tabela */
+    background: #3c408b; 
     color: #ffffff;
 }
 
@@ -132,15 +168,15 @@ body.dark-mode #search-form {
 }
 
 table.dark-mode th {
-    background-color: #323768; /* Um azul mais suave para a primeira linha da tabela */
+    background-color: #323768; 
     color: #ffffff;
 }
 
 table.dark-mode td {
-    border-bottom: 1px solid #4f528c; /* Linhas divisórias em um tom de azul que combine */
+    border-bottom: 1px solid #4f528c; 
 }
 
-/* Cores alternadas para as linhas da tabela no modo noturno */
+
 table.dark-mode tr:nth-child(odd) {
     background-color: #363a7c;
 }
@@ -149,19 +185,19 @@ table.dark-mode tr:nth-child(even) {
     background-color: #3c408b;
 }
 
-/* Estilos dos botões no Modo Noturno */
+
 button.dark-mode {
-    background-color: #484b9e; /* Um tom de azul mais vívido para os botões */
-    color: #dde1f8; /* Cor do texto do botão mais claro para melhor legibilidade */
+    background-color: #484b9e; 
+    color: #dde1f8; 
 }
 
 button.dark-mode:hover {
-    background-color: #535a9d; /* Um azul claro para o estado de hover do botão */
+    background-color: #535a9d; 
 }
 
-/* Modifica a cor do título no modo noturno */
+
 body.dark-mode h1 {
-    color: #c2c5d6; /* Um tom claro de azul para o título que será visível no fundo escuro */
+    color: #c2c5d6; 
 }
 
 body.dark-mode .select-wrapper select {
@@ -171,6 +207,41 @@ body.dark-mode .select-wrapper select {
 }
 
 body.dark-mode input, body.dark-mode select {
-    background-color: #333333; /* Cor de fundo mais escura para o modo noturno */
-    color: #ffffff; /* Texto branco para o modo noturno */
+    background-color: #333333; 
+    color: #ffffff; 
+}
+
+.completed {
+    text-decoration: line-through; 
+    color: #bbb; 
+}
+
+.dark-mode, .dark-mode li {
+    background-color: #333;
+    color:white;
+}
+
+form, .dark-mode form {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.dark-mode form {
+    background: #3c408b;  
+}
+
+
+.dark-mode #task-list li {
+    background-color: #333; 
+    color: white; 
+}
+
+.dark-mode #task-list li:hover {
+    background-color: #444; 
 }
