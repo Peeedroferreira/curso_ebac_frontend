@@ -11,14 +11,20 @@
     <h1>Lista de Tarefas</h1>
     <form id="task-form">
         <input type="text" id="new-task" placeholder="Adicionar nova tarefa" required>
+        <input type="date" id="task-date" required>
+        <input type="time" id="task-time" required>
         <button type="submit">Adicionar Tarefa</button>
         <button id="toggle-dark-mode">Modo Noturno</button>
         <button id="clear-tasks">Limpar Tarefas</button>
 
     </form>
-    <ol id="task-list"></ol>
+    <div id="tasks-container" style="max-width: 600px; margin: auto;"></div>
+    <footer>
+        <p>&copy; 2024 DoctorPython. Todos os direitos reservados.</p>
+    </footer>
     
     <script src="dark-mode.js"></script>
     <script src="tasks.js"></script>
+    <!-- <script src="notification.js"></script> -->
 </body>
 </html>
