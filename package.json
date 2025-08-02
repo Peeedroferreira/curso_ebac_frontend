@@ -1,0 +1,27 @@
+{
+  "name": "curso_ebac_frontend-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "sass scss/main.scss styles.css",
+    "watch": "sass --watch scss/main.scss styles.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Peeedroferreira/curso_ebac_frontend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Peeedroferreira/curso_ebac_frontend/issues"
+  },
+  "homepage": "https://github.com/Peeedroferreira/curso_ebac_frontend#readme",
+  "devDependencies": {
+    "live-server": "^1.2.0",
+    "sass": "^1.71.1"
+  }
+}

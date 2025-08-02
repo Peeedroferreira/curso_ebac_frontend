@@ -1,0 +1,8 @@
+@use 'variables';
+
+footer {
+    background-color: variables.$corPrincipal;
+    color: variables.$corTexto;
+    padding: 16px 0;
+    text-align: center;
+}
